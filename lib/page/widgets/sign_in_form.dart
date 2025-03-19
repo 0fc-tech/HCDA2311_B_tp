@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SignInForm extends StatefulWidget {
-  const SignInForm({super.key});
+  //Function(String email) onSignedIn;
+
+  SignInForm({/*required this.onSignedIn,*/ super.key});
 
   @override
   State<SignInForm> createState() => _SignInFormState();
@@ -29,6 +32,8 @@ class _SignInFormState extends State<SignInForm> {
 
   void submitForm() {
     _formKey.currentState?.validate();
+    context.go("/home/${controllerEmail.text}");
+    //widget.onSignedIn();
   }
 
   @override
