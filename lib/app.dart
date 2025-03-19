@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_twitter/home_page.dart';
+import 'package:flutter_twitter/page/home_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
